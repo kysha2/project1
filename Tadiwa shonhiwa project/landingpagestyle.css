@@ -1,0 +1,281 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(https://images.pexels.com/photos/93405/pexels-photo-93405.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    color: #333;
+}
+nav {
+	background-color:#101010;
+}
+/* Header Styles */
+header {
+    background-color: #101010;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+header .links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header .links li {
+    margin: 0 15px;
+}
+
+header .links li a {
+    color: #0000ff; /* Set the text color to blue */
+    text-decoration: none; /* Remove underline from links */
+}
+
+header .links #getstarted a {
+    color: white; /* This will make only the "Get Started" link text white */
+    background-color: #f90;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #333;
+}
+
+header .links #getstarted a:hover {
+    background-color: #e67e22;
+}
+
+label {
+    color: #005453;
+    font-size: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding-left: 35px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Start Landing Page */
+.landing-page header {
+    min-height: 40px;
+    display: flex;
+}
+
+.landing-page header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing-page header .logo {
+    color: #f9f7fe;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.landing-page header .links {
+    display: flex;
+    align-items: center;
+}
+
+.landing-page header .links li {
+    margin-left: 40px;
+    color: #FF4500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.landing-page header .links li:last-child {
+    border-radius: 50px;
+    padding: 15px 20px;
+    color: #f9f7fe;
+    background-color: #000000;
+}
+
+.landing-page .content .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 190px;
+    min-height: calc(100vh - 80px);
+}
+
+.landing-page .content .info h1 {
+    color: #000000;
+    font-size: 50px;
+}
+
+.landing-page .content .info p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 25px;
+    color: #002147;
+}
+
+.landing-page .content .info button {
+    border: 0;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #0000ff;
+    background-color: #000000;
+}
+
+.landing-page .content .image img {
+    max-width: 100%;
+}
+
+/* Footer Styles */
+.footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#101010;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+ 
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+.links a:hover{
+  text-decoration:underline;
+  background-color:#666;
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .links li {
+        margin: 5px 0;
+    }
+
+    .landing-page .content .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .landing-page .content .info,
+    .landing-page .content .image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .landing-page .content .info {
+        margin-bottom: 20px;
+    }
+
+   
+}
